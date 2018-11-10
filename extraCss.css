@@ -23,3 +23,13 @@
 .secondaryTextColor{
   color: #FFB422;
 }
+
+
+
+button.btn.btn-primary {
+  border-radius: 20px;
+}
+
+.card-body{
+  cursor: pointer;
+}

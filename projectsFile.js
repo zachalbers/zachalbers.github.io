@@ -1,33 +1,14 @@
 
 
-
-
-
-
-// var numberofSquares = 6;
-// var colors = generateRandomColors(numberofSquares);
-//
-// var squares = document.querySelectorAll(".square");
-// var pickedColor = pickColor();
-// var colorDisplay = document.getElementById("colorDisplay");
-// var messageDisplay = document.querySelector("#message");
-// var h1 = document.querySelector("h1");
-// var resetButton = document.querySelector("#reset");
-// var easyButton = document.querySelector("#easyButton");
-// var hardButton = document.querySelector("#hardButton");
-
-
- var allProjects = document.querySelectorAll(".projectZ");
- var iosProjects = document.querySelectorAll(".ios-project");
- var parentTag = document.querySelector(".parentTag");
+// Projects on the page
+var allProjects = document.querySelectorAll(".projectZ");
+var webDevProjects = document.querySelectorAll(".web-dev-project");
+var iosProjects = document.querySelectorAll(".ios-project");
+var parentTag = document.querySelector(".parentTag");
 
  var allCards = document.querySelectorAll(".card");
 
- // var projectsButton = document.querySelector("#projects-Button");
- //
- // var currentXCoord =  parseInt(window.location.hash.substring(1));
- // console.log(currentXCoord);
- // window.scrollTo(0,currentXCoord);
+
 
 
  for (var i = 0; i <allCards.length; i++) {
@@ -45,14 +26,11 @@
  }
 
 
- var currentDisplayProjects = allProjects;
 
-
-var tags = ['iOS-tag', 'Web-Development-tag'];
-
+var currentDisplayProjects = allProjects;
 var allButton = document.querySelector("#all-btn");
-var iosButton = document.querySelector("#iOS-btn");
-var webDevButton = document.querySelector("#web-development-btn");
+var iosButtons = document.querySelectorAll(".iOS-btn");
+var webDevButtons = document.querySelectorAll(".web-development-btn");
 
 
 
@@ -64,17 +42,20 @@ allButton.addEventListener("click", function() {
 
 });
 
-iosButton.addEventListener("click", function() {
-  updateDisplayProjects(iosProjects);
 
-});
 
-webDevButton.addEventListener("click", function() {
-  for (var i = 0; i <currentDisplayProjects.length; i++) {
-    // currentDisplayProjects[i].classList.add('hideFromView');
-  }
 
-});
+for (var i = 0; i <iosButtons.length; i++) {
+  iosButtons[i].addEventListener("click", function() {
+    updateDisplayProjects(iosProjects);
+  });
+}
+
+for (var i = 0; i < webDevButtons.length; i++) {
+  webDevButtons[i].addEventListener("click", function() {
+    updateDisplayProjects(webDevProjects);
+  });
+}
 
 
 
@@ -90,6 +71,11 @@ function updateDisplayProjects(projectsToShow) {
     parentTag.appendChild(currentDisplayProjects[i]);
   }
 }
+
+
+
+
+
 
 // hardButton.addEventListener("click", function() {
 //   messageDisplay.textContent = "";

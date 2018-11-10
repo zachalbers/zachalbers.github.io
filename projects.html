@@ -53,8 +53,8 @@
       <div class="row">
         <nav class="nav">
           <a class="nav-link disabled" id="all-btn">All</a>
-          <a class="nav-link h5 text-primary" id="iOS-btn">iOS</a>
-          <a class="nav-link h5 text-primary" id="web-development-btn">Web Development</a>
+          <a class="nav-link h5 text-primary iOS-btn">iOS</a>
+          <a class="nav-link h5 text-primary web-development-btn">Web Development</a>
           <a class="nav-link h5 text-primary" id="entrepreneurship-btn">Entrepreneurship</a>
         </nav>
       </div>
@@ -64,57 +64,144 @@
     <div class="container mt-4">
       <div class="row parentTag">
 
-      <div class="col-md d-flex justify-content-center align-items-center projectZ">
-        <div class="card shadow-sm" style="width: 18rem;">
-          <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
+        <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project web-dev-project mb-5">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+            <div class="card-body" data-toggle="modal" data-target="#projectModal1">
+              <img src="./imgs/TheNannyShackWebsite.jpg" class="img-fluid">
+              <h5 class="card-title">The Nanny Shack</h5>
+              <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+            </div>
+
+            <!--Project Tags  -->
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary btn-sm web-development-btn" style="font-size : 0.7rem">Web Development</button>
+              <button type="button" class="btn btn-primary btn-sm iOS-btn" style="font-size : 0.7rem">iOS</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md d-flex justify-content-center align-items-center projectZ">
-        <div class="card shadow-sm" style="width: 18rem;">
-          <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
+
+        <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project  mb-5">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+            <div class="card-body">
+              <img class="img-fluid" src="./imgs/buildABeer.png">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text"> A prototype website build for a social enterprise..</p>
+            </div>
+
+            <!--Project Tags  -->
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-primary btn-sm iOS-btn" style="font-size : 0.7rem">iOS</button>
+        <!-- <button class="btn btn-primary" type="submit" value="Submit">Disabsled <span class="fa fa-check"></span>
+        </button> -->
+              <!-- <p class=""> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p> -->
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project">
+        <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project  mb-5">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+            <img class="card-img-top"  src="./imgs/bulb-s.png" alt="Card image cap" style="width: 15rem; height: 11rem;">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+            </div>
+
+            <!--Project Tags  -->
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-primary btn-sm iOS-btn" style="font-size : 0.7rem">iOS</button>
+        <!-- <button class="btn btn-primary" type="submit" value="Submit">Disabsled <span class="fa fa-check"></span>
+        </button> -->
+              <!-- <p class=""> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project mb-5">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+            <img class="card-img-top" src="./imgs/TheNannyShackWebsite.jpg" alt="Card image cap" style="width: 15rem; height: 11rem;">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+            </div>
+
+            <!--Project Tags  -->
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-primary btn-sm iOS-btn" style="font-size : 0.7rem">iOS</button>
+        <!-- <button class="btn btn-primary" type="submit" value="Submit">Disabsled <span class="fa fa-check"></span>
+        </button> -->
+              <!-- <p class=""> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project mb-5">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+            <img class="card-img-top"  src="./imgs/bulb-s.png" alt="Card image cap" style="width: 15rem; height: 11rem;">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+            </div>
+
+            <!--Project Tags  -->
+            <div class="card-footer">
+
+              <button type="button" class="btn btn-primary btn-sm iOS-btn" style="font-size : 0.7rem">iOS</button>
+        <!-- <button class="btn btn-primary" type="submit" value="Submit">Disabsled <span class="fa fa-check"></span>
+        </button> -->
+              <!-- <p class=""> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p> -->
+            </div>
+          </div>
+        </div>
+
+
+
+      <div class="col-md d-flex justify-content-center align-items-center projectZ web-dev-project mb-5">
         <div class="card shadow-sm" style="width: 18rem;">
           <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Project 3</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
-
           </div>
         </div>
       </div>
 
-      <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project">
-        <div class="card shadow-sm" style="width: 18rem;">
-          <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Project 4</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
-          </div>
-        </div>
-      </div>
+
+
+
 
     </div>
 
     </div>
 
 
-
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalLabel1">The Nanny Shack</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
+            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
+            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
+            ...
+            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

@@ -2,22 +2,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!-- <eta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="extraCss.css" type="text/css">
 
     <title>Zachariah Albers - Portfolio</title>
+
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="extraCss.css" type="text/css">
   </head>
   <body>
     <!--
     Additions to make:
     - 'See more' appears when you mouse over a project
 
-
+    - in js add "shadow over project and 'Click to see more'  "
 
     -->
 
@@ -57,39 +59,55 @@
       </div>
 
 
-
+<!--Highlighted Projects Container  -->
     <div class="container mt-4 mb-5">
       <div class="row parentTag">
 
+<!--Highlighted Projects: Project 1  -->
         <div class="col-md d-flex justify-content-center align-items-center projectZ">
-          <div class="card shadow-sm" style="width: 18rem;">
-            <img class="card-img-top" src="./imgs/TheNannyShackWebsite.jpg" alt="Card image cap">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+            <img class="card-img-top" src="./imgs/TheNannyShackWebsite.jpg" alt="Card image cap" style="width: 15rem; height: 11rem;">
             <div class="card-body">
               <h5 class="card-title">The Nanny Shack</h5>
               <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
-              <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
+            </div>
+
+            <!--Project Tags  -->
+            <div class="card-footer">
+              <button class="btn btn-primary btn-sm" type="submit">Button <span class="fa fa-check"></span>
+</button>
+<button class="btn btn-primary disabled" type="submit" value="Submit">Disabled <span class="fa fa-check"></span>
+</button>
+              <!-- <p class=""> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p> -->
             </div>
           </div>
         </div>
 
+
+<!--Highlighted Projects: Project 2  -->
         <div class="col-md d-flex justify-content-center align-items-center projectZ">
-          <div class="card shadow-sm" style="width: 18rem;">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
             <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. <br>
-                <br>
-                <br>
-                <br>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the card's content.
                 <br>
               </p>
+
+            </div>
+            <!--Project Tags  -->
+            <div class="card-footer">
               <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
             </div>
+
           </div>
         </div>
 
+
+<!--Highlighted Projects: Project 3  -->
         <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project">
-          <div class="card shadow-sm" style="width: 18rem;">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
             <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Project 3</h5>
@@ -99,9 +117,15 @@
             </div>
           </div>
         </div>
+
+<!--New Projects Here  -->
+
+
       </div>
     </div>
 
+
+<!-- About Me Container -->
     <div class="container px-3">
       <h3 class="border-bottom">About Me:</h3>
 
