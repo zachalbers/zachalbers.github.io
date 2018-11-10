@@ -1,0 +1,25 @@
+.hideFromView {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+.showToView {
+  visibility: hidden;
+  opacity: 1;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+#currently-Selected-Tab{
+  color: #07C0CC;
+  border-color: #07C0CC;
+}
+
+.mainTextColor{
+  color: #07C0CC;
+  border-color: #07C0CC;
+}
+
+.secondaryTextColor{
+  color: #FFB422;
+}
