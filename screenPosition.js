@@ -1,4 +1,7 @@
-
+//
+// Created by Zachariah Albers on 7/14/18.
+// Copyright © 2018 Zachariah Albers. All rights reserved.
+// 
 
 var projectsButton = document.querySelector("#projects-Button");
 var homeButton = document.querySelector("#home-Button");
