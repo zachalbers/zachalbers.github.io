@@ -40,10 +40,11 @@
         </div>
       </div>
 
+      <!-- Main Navigation Bar  -->
       <div class="container-fluid ">
         <div class="row d-flex justify-content-center">
           <nav class="d-flex justify-content-center nav">
-            <a class="nav-link disabled h4 border-bottom" id="home-Button"> <span id="currently-Selected-Tab">Home</span></a>
+            <a class="nav-link disabled h4 border-bottom" id="home-Button"> <span id="currently-Selected-Tab">Overview</span></a>
             <a class="nav-link h4 text-primary" id="projects-Button">Projects</a>
           </nav>
           <nav class="d-flex justify-content-center nav">
@@ -56,6 +57,7 @@
 
       <div class="container px-3">
         <h3 class="border-bottom">Highlighted Projects:</h3>
+
       </div>
 
 
@@ -63,60 +65,91 @@
     <div class="container mt-4 mb-5">
       <div class="row parentTag">
 
-<!--Highlighted Projects: Project 1  -->
-        <div class="col-md d-flex justify-content-center align-items-center projectZ">
-          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
-            <img class="card-img-top" src="./imgs/TheNannyShackWebsite.jpg" alt="Card image cap" style="width: 15rem; height: 11rem;">
-            <div class="card-body">
-              <h5 class="card-title">The Nanny Shack</h5>
-              <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
-            </div>
 
-            <!--Project Tags  -->
-            <div class="card-footer">
-              <button class="btn btn-primary btn-sm" type="submit">Button <span class="fa fa-check"></span>
-</button>
-<button class="btn btn-primary disabled" type="submit" value="Submit">Disabled <span class="fa fa-check"></span>
-</button>
-              <!-- <p class=""> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p> -->
-            </div>
-          </div>
-        </div>
+  <!--
+Use this for button popover:
+data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">
 
+
+ -->
+
+
+ <!--Highlighted Projects: Project 1  -->
+ <div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
+   <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+     <div class="card-body" data-toggle="modal" data-target="#projectModal1">
+
+       <!-- Project: Image  -->
+       <img src="./imgs/TheNannyShackWebsite.jpg" class="img-fluid">
+
+       <!-- Project: Title  -->
+       <h5 class="card-title">The Nanny Shack</h5>
+
+       <!-- Project: Brief Descrption -->
+       <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+     </div>
+
+     <!--Project Tags  -->
+     <div class="card-footer">
+       <!-- Web Developement Tag with Popover  -->
+       <button type="button" class="btn btn-primary disabled btn-sm web-development-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Web Development</button>
+       <!-- iOS Tag with Popover -->
+       <button type="button" class="btn btn-primary btn-sm disabled iOS-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">iOS</button>
+     </div>
+   </div>
+ </div>
 
 <!--Highlighted Projects: Project 2  -->
-        <div class="col-md d-flex justify-content-center align-items-center projectZ">
-          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
-            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-                <br>
-              </p>
+<div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
+  <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+    <div class="card-body" data-toggle="modal" data-target="#projectModal1">
 
-            </div>
-            <!--Project Tags  -->
-            <div class="card-footer">
-              <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
-            </div>
+      <!-- Project: Image  -->
+      <img src="./imgs/TheNannyShackWebsite.jpg" class="img-fluid">
 
-          </div>
-        </div>
+      <!-- Project: Title  -->
+      <h5 class="card-title">The Nanny Shack</h5>
+
+      <!-- Project: Brief Descrption -->
+      <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+    </div>
+
+    <!--Project Tags  -->
+    <div class="card-footer">
+      <!-- Web Developement Tag with Popover  -->
+      <button type="button" class="btn btn-primary disabled btn-sm web-development-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Web Development</button>
+      <!-- iOS Tag with Popover -->
+      <button type="button" class="btn btn-primary btn-sm disabled iOS-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">iOS</button>
+    </div>
+  </div>
+</div>
 
 
 <!--Highlighted Projects: Project 3  -->
-        <div class="col-md d-flex justify-content-center align-items-center projectZ ios-project">
-          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
-            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <p class="text-muted"> <span class="border rounded">iOS</span> <span class="border rounded"> Web Development</span> </p>
+<div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project ui-design-project mb-5">
+  <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+    <div class="card-body" data-toggle="modal" data-target="#projectModal1">
 
-            </div>
-          </div>
-        </div>
+      <!-- Project: Image  -->
+      <img src="./imgs/buildABeer.png" class="img-fluid">
+
+      <!-- Project: Title  -->
+      <h5 class="card-title">The Nanny Shack</h5>
+
+      <!-- Project: Brief Descrption -->
+      <p class="card-text"> A prototype website build for a..</p>
+    </div>
+
+    <!--Project Tags  -->
+    <div class="card-footer">
+      <!-- UI Design Tag with Popover -->
+      <button type="button" class="btn btn-primary btn-sm disabled ui-design-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">iOS</button>
+      <!-- Entrepreneurship Tag with Popover -->
+      <button type="button" class="btn btn-primary btn-sm disabled enti-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Entrepreneurship</button>
+    </div>
+  </div>
+</div>
+
 
 <!--New Projects Here  -->
 
@@ -149,6 +182,35 @@
 
 
 
+    <!-- Project: Full Descriptions -->
+
+
+    <!-- Project 1:   -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalLabel1">The Nanny Shack</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <p class="modal-text">A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+
+
+            ...
+            <img class="card-img-top" src="./imgs/bulb-s.png" alt="Card image cap">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
     <!-- Optional JavaScript -->
@@ -158,6 +220,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Other Scripts  -->
+
+    <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+
+    </script>
     <script type="text/javascript" src="indexFile.js">
 
     </script>

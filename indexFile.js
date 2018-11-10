@@ -24,13 +24,8 @@ for (var i = 0; i <allCards.length; i++) {
     this.classList.remove('shadow-sm');
   });
 
-allCards[i].addEventListener("mouseleave", function() {
-  this.classList.remove('shadow-lg');
-  this.classList.add('shadow-sm');
-});
-
-
-
-
-
+  allCards[i].addEventListener("mouseleave", function() {
+    this.classList.remove('shadow-lg');
+    this.classList.add('shadow-sm');
+  });
 }

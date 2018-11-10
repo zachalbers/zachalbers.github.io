@@ -33,3 +33,12 @@ button.btn.btn-primary {
 .card-body{
   cursor: pointer;
 }
+
+a {
+  cursor: pointer;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
