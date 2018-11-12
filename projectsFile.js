@@ -1,19 +1,36 @@
 //
 // Created by Zachariah Albers on 7/14/18.
 // Copyright © 2018 Zachariah Albers. All rights reserved.
-// 
+//
 
 
 // Projects on the page
-var allProjects = document.querySelectorAll(".project");
-var webDevProjects = document.querySelectorAll(".web-dev-project");
-var iosProjects = document.querySelectorAll(".ios-project");
-var entiProjects = document.querySelectorAll(".enti-project");
-var uiDesignProjects = document.querySelectorAll(".ui-design-project");
+
+
+
+
+
+// var projectTags = ["all", "ios", "web-dev", "enti" "ui-design", "java", "python", "backend"];
+
+var projectTags = ["all", "ios", "web-dev", "enti", "ui-design", "java", "python", "backend"];
+
+var projectTagDic = {}
+
+for (var i = 0; i <projectTags.length; i++) {
+
+  projectTagDic[projectTags[i]] = document.querySelectorAll("." + projectTags[i]  +"-project");
+}
+
+
+
+var allProjects = document.querySelectorAll(".all-project");
+var currentDisplayProjects = allProjects;
+
 var parentTag = document.querySelector(".parentTag");
 
- var allCards = document.querySelectorAll(".card");
+var currentTag = document.querySelector("#all-btn")
 
+var allCards = document.querySelectorAll(".card");
 
 
 
@@ -32,53 +49,17 @@ var parentTag = document.querySelector(".parentTag");
  }
 
 
-// Buttons
-var currentDisplayProjects = allProjects;
-var allButton = document.querySelector("#all-btn");
-var iosButtons = document.querySelectorAll(".iOS-btn");
-var webDevButtons = document.querySelectorAll(".web-development-btn");
-var entiButtons = document.querySelectorAll(".enti-btn");
-var uiDesignButtons = document.querySelectorAll(".ui-design-btn");
 
+function updateDisplayTags(tagName) {
+  currentTag.classList.add('btn-outline-primary');
+  currentTag.classList.remove('active');
+  currentTag.classList.remove('btn-primary');
 
-
-
-allButton.addEventListener("click", function() {
-
-
-  updateDisplayProjects(allProjects);
-
-});
-
-
-
-
-for (var i = 0; i <iosButtons.length; i++) {
-  iosButtons[i].addEventListener("click", function() {
-    updateDisplayProjects(iosProjects);
-  });
+  currentTag = document.querySelector(tagName);
+  currentTag.classList.remove('btn-outline-primary');
+  currentTag.classList.add('active');
+  currentTag.classList.add('btn-primary');
 }
-
-for (var i = 0; i < webDevButtons.length; i++) {
-  webDevButtons[i].addEventListener("click", function() {
-    updateDisplayProjects(webDevProjects);
-  });
-}
-
-for (var i = 0; i < entiButtons.length; i++) {
-  entiButtons[i].addEventListener("click", function() {
-    updateDisplayProjects(entiProjects);
-  });
-}
-
-for (var i = 0; i < uiDesignButtons.length; i++) {
-  uiDesignButtons[i].addEventListener("click", function() {
-    updateDisplayProjects(uiDesignProjects);
-  });
-}
-
-
-
 
 
 function updateDisplayProjects(projectsToShow) {
@@ -90,4 +71,21 @@ function updateDisplayProjects(projectsToShow) {
   for (var i = 0; i <currentDisplayProjects.length; i++) {
     parentTag.appendChild(currentDisplayProjects[i]);
   }
+
+}
+
+for (var i = 0; i <projectTags.length; i++) {
+  var curString = String(projectTags[i]);
+
+  var curButtons = document.querySelectorAll("." + curString+"-btn");
+
+
+  for (var x = 0; x <curButtons.length; x++) {
+
+    curButtons[x].addEventListener("click", function() {
+      updateDisplayProjects(projectTagDic[this.name]);
+      updateDisplayTags("#" + this.name +"-btn");
+    });
+  }
+
 }

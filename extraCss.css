@@ -33,7 +33,7 @@
 
 
 
-button.btn.btn-primary {
+.btn.btn-primary, .btn.btn-outline-primary {
   border-radius: 20px;
 }
 
