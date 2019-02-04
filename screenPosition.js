@@ -5,6 +5,8 @@
 
 var projectsButton = document.querySelector("#projects-Button");
 var homeButton = document.querySelector("#home-Button");
+var contactButton = document.querySelector("#contact-Button");
+var cpsc581Button = document.querySelector("#cpsc581-Button");
 var currentXCoord = 0;
 
 //
@@ -25,18 +27,34 @@ window.addEventListener('load', function () {
 
 
 
-projectsButton.addEventListener("click", function() {
-
-  currentXCoord = document.documentElement.scrollTop || document.body.scrollTop;
-  window.location.href = './projects.html' + '#' + currentXCoord.toString();
-
-
-});
-
-homeButton.addEventListener("click", function() {
-
-  currentXCoord = document.documentElement.scrollTop || document.body.scrollTop;
-  window.location.href = './index.html' + '#' + currentXCoord.toString();
-
-
-});
+// projectsButton.addEventListener("click", function() {
+//
+//   currentXCoord = document.documentElement.scrollTop || document.body.scrollTop;
+//   window.location.href = './projects.html' + '#' + currentXCoord.toString();
+//
+//
+// });
+//
+// homeButton.addEventListener("click", function() {
+//
+//   currentXCoord = document.documentElement.scrollTop || document.body.scrollTop;
+//   window.location.href = './index.html' + '#' + currentXCoord.toString();
+//
+//
+// });
+//
+// contactButton.addEventListener("click", function() {
+//
+//   currentXCoord = document.documentElement.scrollTop || document.body.scrollTop;
+//   window.location.href = './contact.html' + '#' + currentXCoord.toString();
+//
+//
+// });
+//
+// cpsc581Button.addEventListener("click", function() {
+//
+//   currentXCoord = document.documentElement.scrollTop || document.body.scrollTop;
+//   window.location.href = './CPSC581.html' + '#' + currentXCoord.toString();
+//
+//
+// });

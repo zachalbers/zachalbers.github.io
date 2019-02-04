@@ -48,8 +48,7 @@
           <a class="nav-link h4 text-primary disabled border-bottom" id="projects-Button"> <span id="currently-Selected-Tab">Projects</span></a>
         </nav>
         <nav class="d-flex justify-content-center nav">
-          <a class="nav-link h4 text-primary" id="skills">Skills</a>
-          <a class="nav-link h4 text-primary" id="contact">Contact</a>
+          <a class="nav-link h4 text-primary" id="contact-Button">Contact</a>
         </nav>
       </div>
     </div>
@@ -102,32 +101,6 @@
     <div class="container mt-4">
       <div class="row parentTag">
 
-
-        <!--All Projects: Turtle Patrol   -->
-        <div class="col-md d-flex justify-content-center align-items-center all-project python-project mb-5">
-          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
-
-            <!--Link to full Project Desription  -->
-            <div class="card-body" data-toggle="modal" data-target="#Turtle-Patrol-project">
-
-              <!-- Project: Image  -->
-              <img src="./imgs/projects/TurtlePatrol-img.png" class="img-fluid rounded">
-              <br>
-              <br>
-              <!-- Project: Title  -->
-              <h5 class="card-title">Turtle Patrol</h5>
-
-              <!-- Project: Brief Descrption -->
-              <p class="card-text"> A simple 2D retro-style side scroller developed in Python during my first year. Contains randomly generated potholes, aliens, and turtles to serve as obstacles... </p>
-            </div>
-
-            <!--Project: Tags  -->
-            <div class="card-footer">
-              <!-- Python Tag  -->
-              <button name="python" type="button" class="btn btn-primary btn-sm python-btn" style="font-size : 0.6rem">Python</button>
-            </div>
-          </div>
-        </div>
 
 
         <!--Highlighted Projects: Build A Beer  -->
@@ -321,6 +294,32 @@
           </div>
         </div>
 
+        <!--All Projects: Turtle Patrol   -->
+        <div class="col-md d-flex justify-content-center align-items-center all-project python-project mb-5">
+          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+
+            <!--Link to full Project Desription  -->
+            <div class="card-body" data-toggle="modal" data-target="#Turtle-Patrol-project">
+
+              <!-- Project: Image  -->
+              <img src="./imgs/projects/TurtlePatrol-img.png" class="img-fluid rounded">
+              <br>
+              <br>
+              <!-- Project: Title  -->
+              <h5 class="card-title">Turtle Patrol</h5>
+
+              <!-- Project: Brief Descrption -->
+              <p class="card-text"> A simple 2D retro-style side scroller developed in Python during my first year. Contains randomly generated potholes, aliens, and turtles to serve as obstacles and ways to gather points by shooting...</p>
+            </div>
+
+            <!--Project: Tags  -->
+            <div class="card-footer">
+              <!-- Python Tag  -->
+              <button name="python" type="button" class="btn btn-primary btn-sm python-btn" style="font-size : 0.6rem">Python</button>
+            </div>
+          </div>
+        </div>
+
 
 
 
@@ -330,10 +329,10 @@
     </div>
 
 
-    <!-- Project: Build A Beer -->
+      <!-- Project: Full Descriptions -->
 
 
-    <!-- Turtle Patrol   -->
+    <!-- Turtle Patrol Popup Window -->
     <div class="modal fade" id="Turtle-Patrol-project" tabindex="-1" role="dialog" aria-labelledby="TP-label" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -347,13 +346,49 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
           <div class="modal-body">
+            <div class="row">
+              <div class="col col-lg-6 col-12">
+                <h5>Project Descrption</h5>
+                <p class="modal-text">A simple 2D retro-style side scroller developed in Python during my first year. Contains randomly generated potholes, aliens, and turtles to serve as obstacles and ways to gather points by shooting. The game was build on top of a simple python game engine developed by Professor John Aycock, the instuctor for one of my classes.
+                </p>
+              </div>
 
-            <p class="modal-text">A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+              <div class="col col-md-6">
+                <img src="./imgs/projects/TurtlePatrol-img.png" class="img-fluid">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col-lg-6 col-12">
+                <h5>Highlights of the Project:</h5>
+                <p class="modal-text">
+                <ul>
+                  <li>xaaaa</li>
+                  <li>xaaaaaa</li>
+                  <li>xaaaa</li>
+                </ul>
 
 
-            <img class="card-img-top" src="./imgs/giphy1.gif">
+                </p>
+              </div>
+
+              <div class="col col-md-6">
+                <img src="./imgs/projects/TurtlePatrol-img2.png" class="img-fluid rounded">
+              </div>
+            </div>
+
           </div>
+
+
+
+
+
+
+
+
+
           <div class="modal-footer">
             <!-- Button opens new page showing repository -->
             <a class="btn btn-secondary"href="https://github.com/zachalbers/TurtlePatrolGame" target="_blank"><img src="./imgs/Github-Icon.png" style="height: 1.5rem; width: 1.5rem"> See the Repository</a>
@@ -365,7 +400,9 @@
       </div>
     </div>
 
-    <!-- Build A Beer   -->
+
+
+    <!-- Build A Beer Popup Window  -->
     <div class="modal fade" id="BuildABeer-project" tabindex="-1" role="dialog" aria-labelledby="BAB-label" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -395,7 +432,7 @@
       </div>
     </div>
 
-    <!-- Neural Network Number Classifier   -->
+    <!-- Neural Network Number Classifier Popup Window  -->
     <div class="modal fade" id="NeuralNet-project" tabindex="-1" role="dialog" aria-labelledby="NN-label" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -427,7 +464,7 @@
       </div>
     </div>
 
-    <!-- UniMap + Map Builder   -->
+    <!-- UniMap + Map Builder Popup Window  -->
     <div class="modal fade" id="MapBuilder-project" tabindex="-1" role="dialog" aria-labelledby="MB-label" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
