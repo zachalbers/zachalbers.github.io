@@ -9,7 +9,7 @@ var contactButton = document.querySelector("#contact-Button");
 var cpsc581Button = document.querySelector("#cpsc581-Button");
 var currentXCoord = 0;
 
-//
+// 
 // window.onload = function() {
 //   currentXCoord = parseInt(window.location.hash.substring(1)) || 0;
 //

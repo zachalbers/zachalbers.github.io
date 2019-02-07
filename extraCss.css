@@ -49,3 +49,12 @@ a {
   outline: none !important;
   box-shadow: none !important;
 }
+
+#cpsc581nav {
+  float: right;
+}
+
+#cpsc581-Button {
+  color: #FFB422 !important;
+
+}
