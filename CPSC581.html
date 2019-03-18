@@ -88,7 +88,7 @@
         <div class="row">
 
           <!--Project 0  -->
-          <div class="col col-md-6 col-12">
+          <div class="col col-md-4 col-12">
             <div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
               <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
                 <div class="card-body" data-toggle="modal" data-target="#project0Card">
@@ -116,7 +116,7 @@
           </div>
 
           <!-- Project 1 -->
-          <div class="col col-md-6 col-12">
+          <div class="col col-md-4 col-12">
             <div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
               <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
                 <div class="card-body" data-toggle="modal" data-target="#project1Card">
@@ -146,6 +146,40 @@
             </div>
 
           </div>
+
+          <!-- Project 2 -->
+          <div class="col col-md-4 col-12">
+            <div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
+              <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
+                <div class="card-body" data-toggle="modal" data-target="#project2Card">
+
+                  <!-- Project: Image  -->
+                  <div class="text-center">
+                    <img src="./imgs/cpsc581/p1/MusicNote9.png" class="img-fluid">
+                  </div>
+
+
+                  <br>
+                  <!-- Project: Title  -->
+                  <h5 class="card-title">Project 2: Creative Unlock Apps</h5>
+
+                  <!-- Project: Brief Descrption -->
+                  <p class="card-text"> Two different iOS apps that each simulate a creative way to unlock your phone. Developed using Xcode and Swift.  </p>
+                </div>
+
+                <!--Project Tags  -->
+                <div class="card-footer">
+                  <!-- Web Developement Tag with Popover  -->
+                  <button type="button" class="btn btn-primary disabled btn-sm web-development-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Web Development</button>
+                  <!-- UI Design Tag  -->
+                  <button name="ui-design" type="button" class="btn btn-primary disabled btn-sm ui-design-btn" style="font-size : 0.6rem">UI Design</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
         </div>
 
       </div>
@@ -161,7 +195,7 @@
     <!-- Project: Full Descriptions -->
 
 
-    <!-- Project 1:   -->
+    <!-- Project 0:   -->
     <div class="modal fade" id="project0Card" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -339,6 +373,8 @@
       </div>
     </div>
 
+
+    <!-- Project 1  -->
     <div class="modal fade" id="project1Card" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -510,7 +546,7 @@
                 For implementing this project, I largely worked on programming the brush movement and animation, and the working with the iPhone sensors to move the brush accordingly. I also programmed the logic behind the color choosing and password system.
 
 
- </p>
+              </p>
         </div>
 
 
@@ -541,12 +577,6 @@
 
 
 
-
-
-
-
-
-
         </div>
           <div class="modal-footer">
             <!-- Button opens new page showing repository -->
@@ -558,6 +588,215 @@
 
       </div>
     </div>
+
+
+
+    <!-- Project 2 -->
+    <div class="modal fade" id="project2Card" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalLabel1">Project 2: Washing Machine Notifier </h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <br>
+
+
+            <!-- Design -->
+            <div class="row">
+
+              <div class="col col-md-12 col-12">
+                <h4>Initial Sketches:</h4>
+                <p>     For this project, each member of the group started out by sketching 10 different ideas. This project required us to solve an 'everyday' problem, using an arduino and some type of sensor. For my ideas, I found a lot of the ones I thought up of involved some kind of app, which turned out being more complicated to implement. However I found that the ideas involving an app were the ones I was most likely to use. My initial designs can be seen here. (Still working on getting them to rotate!)  </p>
+
+              </div>
+
+
+              <div>
+                <img src="./imgs/cpsc581/p2/sketch01.jpg" class="img-fluid rounded" style=”transform:rotate(180deg)” >
+                <br>
+                <br>
+
+                <img src="./imgs/cpsc581/p2/sketch2.jpg" class="img-fluid rounded" >
+                <br>
+                <br>
+
+                <img src="./imgs/cpsc581/p2/sketch3.jpg" class="img-fluid rounded" >
+                <br>
+                <br>
+
+                <img src="./imgs/cpsc581/p2/sketch4.jpg" class="img-fluid rounded" >
+                <br>
+                <br>
+
+                <img src="./imgs/cpsc581/p2/sketch5.jpg" class="img-fluid rounded" >
+                <br>
+                <br>
+
+                <img src="./imgs/cpsc581/p2/sketch6.jpg" class="img-fluid rounded" >
+                <br>
+                <br>
+              </div>
+
+
+
+            </div>
+            <br>
+
+
+            <br>
+            <br>
+
+            <!-- Refinement -->
+            <h4>Further Sketching and Iteration:</h4>
+            <div class="row">
+
+
+              <div class="col col-md-6 col-12">
+                <p> Once we all generated lots of different ideas, we met in class to discuss our favorites, and then presented them to class. After receiving class feedback, we decided to go sketch some more iterations for the backpack-based sensor/notification idea, and the washing machine sensor/notification idea (which is what we ended up going with). Here are some of the sketches from this stage: </p>
+
+
+
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p2ahmadsketch1.jpg" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Ahmad) </figcaption>
+                </figure>
+                <br>
+                <br>
+
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p2/robertsketch1.jpg" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Robert) </figcaption>
+                </figure>
+                <br>
+                <br>
+
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p2/robertsketch2.jpg" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Robert) </figcaption>
+                </figure>
+                <br>
+                <br>
+
+
+
+              </div>
+
+
+              <!-- Second Row -->
+
+              <div class="col col-md-6 col-12">
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p2/andiesketch01.jpg" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Andie)</figcaption>
+                </figure>
+                <br>
+                <br>
+
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p2/Bryansketch1.png" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Bryan)</figcaption>
+                </figure>
+                <br>
+                <br>
+
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p2/Bryansketch2.png" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Bryan)</figcaption>
+                </figure>
+                <br>
+                <br>
+
+                <div>
+                  <figure class="figure">
+                    <img src="./imgs/cpsc581/p2/Zachsketch1.jpeg" class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption"> (Sketch by Me)</figcaption>
+                  </figure>
+                  <br>
+                  <br>
+
+                  <figure class="figure">
+                    <img src="./imgs/cpsc581/p2/Zachsketch2.jpeg" class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption"> (Sketch by Me)</figcaption>
+                  </figure>
+                  <br>
+                  <br>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+
+
+            <br>
+            <br>
+
+            <!-- Refinement -->
+            <h4>Implementation:</h4>
+
+
+            <br>
+
+            <div class="row">
+              <div class="col col-md-12 col-12">
+
+                <p> After reviewing our refined sketches and discussing some more, we decided to go forward with the washing machine idea. The idea for this was to have a sensor on the washing machine that could notify the user once it had finished. Many people find it annoying to leave their clothes in the washer or dryer, which can leave them with mildew or wrinkles. This product solves that problem, but notifiying a person when the cycle of the machine is done. Ideally, there would be a sensor on each of the washer and dryer, as well as a receiver for each household memeber, but due to limited time and materials we only made one sensor and receiver. We wanted it to be discrete for the user, so we encased both the sensor on the washing machine and the receiver held by the user in black boxes to hide the wires. Inside the first box, which is placed on the washing machine with magnets, contains the vibration sensor and has the on/off switch, which once activated, will signal the user once the washing machine cycle has ended. The box that is carried on the user has a light and a buzzer that lights up and plays a Mario-themed song to let the user know when the washing machine is finished.
+                <br>
+                <br>
+                For implementing this project, we largely worked in the lab to brainstorm, design, program, and debug, since there was only one arduino board that could be worked on. However, this proved to be productive and we were able to finish the majority of the project in the lab.
+
+
+              </p>
+        </div>
+
+
+              <!-- <div class="col col-md-12 col-12"> -->
+                <!-- <figure class="figure"> -->
+                  <!-- <img src="./imgs/cpsc581/p0/sketchAhmad.jpg" class="figure-img img-fluid rounded"> -->
+                  <!-- <figcaption class="figure-caption"> (Sketch by Ahmad)</figcaption> -->
+                <!-- </figure> -->
+              <!-- </div> -->
+            </div>
+
+
+
+
+            <br>
+
+            <h4> Video Demonstration: </h4>
+
+            <div class="d-flex justify-content-center align-items-center">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/xsy5i1rr-PA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+
+
+
+
+
+        </div>
+          <div class="modal-footer">
+            <!-- Button opens new page showing repository -->
+            <!-- <a class="btn btn-secondary"href="https://drive.google.com/file/d/1WffXnfhrfKgr9-WLdjpNpfqMFg-CpRUN/view" target="_blank"> Download the Project</a> -->
+            <a class="btn btn-secondary"href="https://github.com/Be-bo/581_p2_special" target="_blank"><img src="./imgs/Github-Icon.png" style="height: 1.5rem; width: 1.5rem"> See the Repository</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
 
 
 
