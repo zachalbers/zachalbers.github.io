@@ -30,14 +30,26 @@
         <div class="container">
           <br>
           <br>
-          <h1 class="display-4 text-right">
-            Hello, my name is <span class="display-3 mainTextColor">Zachariah Albers</span></h1>
+
 
           <br>
           <div class="row">
             <div class="col col-sm-8 col-12">
-              <p class="h4 font-weight-light text-left">
-                I am a third-year Commerce and Computer Science student interersted in <span class="secondaryTextColor font-weight-bold">iOS</span> development, <span class="secondaryTextColor font-weight-bold">Front-End Web</span> development, and <span class="secondaryTextColor font-weight-bold">Entrepreneurship</span></p>
+              <h1 class="display-4 text-left">
+                <span class="display-3 mainTextColor">Zachariah Albers</span></h1>
+            </div>
+
+            <div class="col col-sm-4 col-12">
+              <br>
+
+
+              <ul class="h3 mainTextColor font-weight-bold text-left">
+                <li>Designer</li>
+                <li>Traveler</li>
+                <li>Technology Fanatic</li>
+                <li>Learning Enthusiast</li>
+              </ul>
+
             </div>
             <div class="col-sm">
             </div>
@@ -56,7 +68,7 @@
 
             <div>
               <nav class="d-flex justify-content-center nav">
-                <a class="nav-link disabled h4 border-bottom" id="home-Button"> <span id="currently-Selected-Tab">Overview</span></a>
+                <a class="nav-link disabled h4 border-bottom" id="home-Button"> <span id="currently-Selected-Tab">Home</span></a>
                 <a class="nav-link h4 text-primary" id="projects-Button">Projects</a>
                 <a class="nav-link h4 text-primary" id="contact-Button">Contact</a>
               </nav>
@@ -70,24 +82,32 @@
           </div>
         </div>
 
+        <br>
+        <br>
 
-      <div class="container px-3">
+
+      <!-- <div class="container px-3">
         <h3 class="border-bottom">Highlighted Projects:</h3>
 
-      </div>
+      </div> -->
+
 
 
 
 
 <!-- About Me Container -->
     <div class="container px-3">
-      <h3 class="border-bottom">About Me:</h3>
+      <!-- <h3 class="border-bottom">About Me:</h3> -->
       <div class="row">
-        <div class="col col-md-6 col-lg-7 col-12">
-          <p>This is a paragraph</p>
+        <div class="col col-sm-6 col-12">
+          <br>
+          <br>
+          <h2>Hello!</h2>
+          <h3>Welcome to my website!</h3>
+          <p>I am a third-year student at the University of Calgary currently pursuing a combined degree in Business and Computer Science with concentrations in Entrepreneurship and Software Engineering (yes it’s a mouthful, but really not too complicated). This website features many of the projects I have worked on.</p>
         </div>
-        <div class="col col-md-6 col-lg-5 col-12">
-          <img src="./imgs/ZachAlbers2.JPG" class="img-fluid rounded">
+        <div class="col col-sm-6 col-12">
+          <img src="./imgs/ZachAlbers2.jpeg" class="img-fluid rounded">
         </div>
       </div>
     </div>
@@ -99,13 +119,14 @@
       <div class="row">
 
         <!-- Skills -->
-        <div class="col col-md-4">
-          <h3 class="border-bottom">Overview of Skills:</h3>
+        <div class="col col-md-12 col-lg-4">
+          <h3 class="border-bottom">More About Me</h3>
           <p>Hello</p>
 
         </div>
-        <div class="col col-md-8">
-          <p>Hello</p>
+        <div class="col col-md-12 col-lg-8">
+          <h3 class="border-bottom">Highlighted Projects</h3>
+
           <!--Highlighted Projects Container  -->
           <div class="container mt-4 mb-5">
             <div class="row parentTag">
@@ -118,19 +139,19 @@
               -->
 
 
-       <!--Highlighted Projects: Project 1  -->
+       <!--Highlighted Projects: Build A Beer  -->
        <div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
          <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
            <div class="card-body" data-toggle="modal" data-target="#projectModal1">
 
              <!-- Project: Image  -->
-             <img src="./imgs/TheNannyShackWebsite.jpg" class="img-fluid">
+             <img src="./imgs/buildABeerWeb.png" class="img-fluid rounded">
 
              <!-- Project: Title  -->
-             <h5 class="card-title">The Nanny Shack</h5>
+             <h5 class="card-title">Build-A-Beer</h5>
 
              <!-- Project: Brief Descrption -->
-             <p class="card-text"> A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+             <p class="card-text"> A high-fidelity website prototype for a custom brewery delivery service idea. Developed with a team using user-centered design techniques, including multiple heuristic evaluations to improve the user experience, as well as a case study on the Dominoes Pizza app...</p>
            </div>
 
            <!--Project Tags  -->
@@ -200,8 +221,8 @@
 
         </div>
       </div>
-
-        </div>
+    </div>
+    <!-- End -->
 
 
       </div>
@@ -224,19 +245,133 @@
     <!-- Project: Full Descriptions -->
 
 
-    <!-- Project 1:   -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
+    <!-- Project 1: Build A Beer  -->
+
+    <div class="modal fade" id="projectModal1" role="dialog" aria-labelledby="modalLabel1" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title" id="modalLabel1">The Nanny Shack</h2>
+            <h2 class="modal-title" id="modalLabel1">Build-A-Beer</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
+          <div class="hoverModal">
+
+            <!-- The Close Button -->
+            <span class="HoverImageclose">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="hoverModal-content">
+
+            <!-- Modal Caption (Image Text) -->
+            <div class="hoverModal-caption"></div>
+          </div>
+
           <div class="modal-body">
 
-            <p class="modal-text">A prototype website build for a social enterprise that aims to help parents who are struggling to find affordable and flexible daycare, as well as nannies who are struggling to find secure job employment..</p>
+
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <h4>Summary</h4>
+                <p>
+                  The focus of this project was to develop a prototype website for a custom brewery delivery service, using research and applicable design techniques. Over the course of this project a team three students and I researched the market segment and brainstormed ideas for a web-based solution. We followed a design cycle of sketching, more brainstorming and iteration, building basic wireframes of the website in Balsamic, more brainstorming and iteration, then building a high-fidelity prototype in Adobe XD.
+                </p>
+                <br>
+                <br>
+
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-8">
+                <figure class="figure">
+                  <img src="./imgs/buildABeerWeb.png" class="figure-img img-fluid rounded hoverImage">
+                  <figcaption class="figure-caption text-center"> (GIF of the high-fidelity prototype being used) </figcaption>
+                </figure>
+                <br>
+                <br>
+                <br>
+                <br>
+
+              </div>
+
+              <div class="col-12 col-md-6">
+                <h4>My Roles in the Project</h4>
+
+                <ul>
+                  <li>Brainstorming and sketching initial desings</li>
+                  <li>Researching </li>
+                  <li> During the course of this project I also worked .The experience in design iteration refined my brain-storming and idea-generating skills, improving my overall understanding of best practices for design work.</li>
+                </ul>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <h4>Tools/Platforms Used</h4>
+
+                <ul>
+                  <li>Balsamic</li>
+                  <li>Adobe XD</li>
+                  <li>Github (and git)</li>
+                  <li>Slack</li>
+                </ul>
+
+              </div>
+
+            <div class="col-12">
+              <br>
+              <br>
+              <h1 class="justify-content-center text-center" style="font-size : 5rem">...</h1>
+              <br>
+              <br>
+              <br>
+              <br>
+            </div>
+
+
+
+            <div class="col-12 col-md-6">
+              <h4>My Roles in the Project</h4>
+
+              <ul>
+                <li>Brainstorming and sketching initial desings</li>
+                <li>Researching </li>
+                <li> During the course of this project I also worked .The experience in design iteration refined my brain-storming and idea-generating skills, improving my overall understanding of best practices for design work.</li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <h4>Tools/Platforms Used</h4>
+
+              <ul>
+                <li>Balsamic</li>
+                <li>Adobe XD</li>
+                <li>Github (and git)</li>
+                <li>Slack</li>
+              </ul>
+              <figure class="figure">
+                <img src="./imgs/cpsc581/p2/ahmadsketch1.jpg" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption"> (Sketch by Ahmad) </figcaption>
+              </figure>
+            </div>
+
+            </div>
+
+            <p class="modal-text">
+              Summary:
+
+              What
+
+              Market Research, followed by hand sketches, more iteration, then simple wireframes in Balsamic, followed by a high-fidelity prototype(seen here). During the course of this project I also worked .The experience in design iteration refined my brain-storming and idea-generating skills, improving my overall understanding of best practices for design work.
+
+
+
+
+
+
+
+            </p>
+
+
 
 
             ...
@@ -270,6 +405,18 @@
     <script>
       $(document).ready(function(){
         $(".row").removeClass("pageLoadOffset");
+      });
+
+    </script>
+
+    <script>
+      $("html").on("mouseup", function (e) {
+        var l = $(e.target);
+        if (l[0].className.indexOf("popover") == -1) {
+          $(".popover").each(function () {
+            $(this).popover("hide");
+          });
+        }
       });
 
     </script>
