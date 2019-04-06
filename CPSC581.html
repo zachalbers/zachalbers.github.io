@@ -177,7 +177,7 @@
                 <h5 class="card-title">Project 2: Washing Machine Notifier</h5>
 
                 <!-- Project: Brief Descrption -->
-                <p class="card-text"> A project built using arduino that allows a user to be notified when their laundry is done. </p>
+                <p class="card-text"> A project built using Arduino that allows a user to be notified when their laundry is done. </p>
               </div>
 
               <!--Project Tags  -->
@@ -878,8 +878,8 @@
 
               <div class="col col-md-12 col-12">
                 <h4>Initial Sketches:</h4>
-                <p>     For this project, each member of the group started out by sketching 10 different ideas. This project required us to solve an 'everyday' problem, using an arduino and some type of sensor. For my ideas, I found a lot of the ones I thought up of involved some kind of app, which turned out being more complicated to implement. However I found that the ideas involving an app were the ones I was most likely to use. My initial designs can be seen here. (Still working on getting them to rotate!)  </p>
-
+                <p> The purpose of this project was to create a fashion technology garment using Arduino. To come up with a large selection of ideas to choose from we each sketched 10 different ideas. For my initial sketches I thought of primarily LEDs as the output, as this would be the most feasible to implement given the resources available to us. Some of my ideas involved inputs such as geo-location, touch, heartbeat, light, or a specific motion. I liked the idea of having visual feedback with the lights in response to some input, so a lot of my ideas contained some form of lights turning on in sync with the users input.
+                </p>
 
 
               </div>
@@ -915,10 +915,8 @@
 
             </div>
             <br>
-
-
             <br>
-            <br>
+
 
             <!-- Refinement -->
             <h4>Further Sketching and Iteration:</h4>
@@ -926,7 +924,8 @@
 
 
               <div class="col col-md-6 col-12">
-                <p> Once we all generated lots of different ideas, we met in class to discuss our favorites, and then presented them to class. After receiving class feedback, we decided to go sketch some more iterations for the backpack-based sensor/notification idea, and the washing machine sensor/notification idea (which is what we ended up going with). Here are some of the sketches from this stage: </p>
+                <p> We met in class after having sketched out different ideas, to compare and receive feedback from to choose good ideas to further iterate with. We presented our favorites to the class and based on feedback we received decided to sketch some more ideas for a LED heartbeat idea and a LED hair extension idea. Here are the sketches for these ideas:
+                </p>
 
 
 
@@ -951,6 +950,13 @@
                 <br>
                 <br>
 
+                <figure class="figure">
+                  <img src="./imgs/cpsc581/p3/Zachsketch2.jpg" class="figure-img img-fluid rounded">
+                  <figcaption class="figure-caption"> (Sketch by Me)</figcaption>
+                </figure>
+                <br>
+                <br>
+
 
 
 
@@ -968,14 +974,14 @@
                 <br>
 
                 <figure class="figure">
-                  <img src="./imgs/cpsc581/p2/Bryansketch1.png" class="figure-img img-fluid rounded">
+                  <img src="./imgs/cpsc581/p3/Bryansketch1.png" class="figure-img img-fluid rounded">
                   <figcaption class="figure-caption"> (Sketch by Bryan)</figcaption>
                 </figure>
                 <br>
                 <br>
 
                 <figure class="figure">
-                  <img src="./imgs/cpsc581/p2/Bryansketch2.png" class="figure-img img-fluid rounded">
+                  <img src="./imgs/cpsc581/p3/Bryansketch2.png" class="figure-img img-fluid rounded">
                   <figcaption class="figure-caption"> (Sketch by Bryan)</figcaption>
                 </figure>
                 <br>
@@ -989,12 +995,6 @@
                   <br>
                   <br>
 
-                  <figure class="figure">
-                    <img src="./imgs/cpsc581/p3/Zachsketch2.jpg" class="figure-img img-fluid rounded">
-                    <figcaption class="figure-caption"> (Sketch by Me)</figcaption>
-                  </figure>
-                  <br>
-                  <br>
                 </div>
 
 
@@ -1009,7 +1009,7 @@
             <br>
 
             <!-- Refinement -->
-            <h4>Implementation:</h4>
+            <h4>Design & Implementation:</h4>
 
 
             <br>
@@ -1017,10 +1017,25 @@
             <div class="row">
               <div class="col col-md-12 col-12">
 
-                <p> After reviewing our refined sketches and discussing some more, we decided to go forward with the washing machine idea. The idea for this was to have a sensor on the washing machine that could notify the user once it had finished. Many people find it annoying to leave their clothes in the washer or dryer, which can leave them with mildew or wrinkles. This product solves that problem, but notifiying a person when the cycle of the machine is done. Ideally, there would be a sensor on each of the washer and dryer, as well as a receiver for each household memeber, but due to limited time and materials we only made one sensor and receiver. We wanted it to be discrete for the user, so we encased both the sensor on the washing machine and the receiver held by the user in black boxes to hide the wires. Inside the first box, which is placed on the washing machine with magnets, contains the vibration sensor and has the on/off switch, which once activated, will signal the user once the washing machine cycle has ended. The box that is carried on the user has a light and a buzzer that lights up and plays a Mario-themed song to let the user know when the washing machine is finished.
+                <p> After reviewing the refined sketches, we discussed how each might be implemented and decided that we could best implement the heartbeat sensor idea both aesthetically and functionally. Once we decided on that idea to go forward with, we discussed some possibilites for the design.
+                  <br>
+                  <br>
+
+                  We wanted the the heartbeat to be visible when on, but didn't want it stand out when it was off. To accomplish this we decided to stitch (and later glue) the lights to an undershirt, and then have another shirt to go on top (seen below). This way we could shape the lights into a heart on the undershirt without worrying about hiding wires. Some other things we tried to make the lights look better included black felt and tape, but we eventually used glue to hold the wires down, which allowed the light defuse more evenly and more resemble the shape of a heart through the top shirt.
+
                 <br>
                 <br>
-                For implementing this project, we largely worked in the lab to brainstorm, design, program, and debug, since there was only one arduino board that could be worked on. However, this proved to be productive and we were able to finish the majority of the project in the lab.
+
+                For the code design, we were able to utilize some PulseSensor examples and online tutorials to figure out how to monitor both the heartbeat and heartrate. We wanted the heartrate level to correspond with different colors in the LED strip to visibly indicate that the heartrate is low (below 70), medium (70-100), or high (over 100), so we programmed the LED strip to change colors (once a BPM could be calculated) according to the wearers heartrate.
+
+                <br>
+                <br>
+
+                The idea behind this project was to have a visible representation of the wearers heartbeat. To accomplish this we programmed the LEDs to 'pulse' in succession, to show the speed of the heartbeat but still maintain the shape of a heart. A heartbeat also reveals information about the wearers state, so to represent this we had a darker blue color which suggests a calmer aura. As the the hearbeat increases the color changes to Magenta and the a bright red which suggests more actvity. We liked the clean look of a white t-shirt, which would also allow the LED lights to brightly enough, while being thick enough to hide them when off.
+
+                <br>
+                <br>
+
 
 
                 </p>
