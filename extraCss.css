@@ -51,11 +51,15 @@
 }
 
 .card-title {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Fredericka the Great', cursive;
 }
 
-h4 {
+/* h4 {
   font-family: 'Russo One', sans-serif;
+} */
+
+.modal-title {
+  font-family: 'Fredericka the Great', cursive;
 }
 
 a {
@@ -68,8 +72,10 @@ a {
 }
 
 .modal-lg {
-    max-width: 80%;
+    max-width: 85%;
+    justify-content: center;
 }
+
 
 #cpsc581nav {
   float: right;

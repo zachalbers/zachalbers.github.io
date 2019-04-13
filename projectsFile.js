@@ -12,7 +12,7 @@
 
 // var projectTags = ["all", "ios", "web-dev", "enti" "ui-design", "java", "python", "backend"];
 
-var projectTags = ["all", "ios", "web-dev", "enti", "ui-design", "java", "python", "backend"];
+var projectTags = ["all", "ios", "web-dev", "enti", "ui-design", "java", "python", "backend", "arduino", "cpsc-581"];
 
 var projectTagDic = {}
 
