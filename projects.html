@@ -276,32 +276,32 @@
 
 
 
-        <!--Highlighted Projects: Project 5  -->
-        <!--Project: Type of Project in classes  -->
-        <div class="col-md d-flex justify-content-center align-items-center all-project web-dev-project ui-design-project mb-5">
+        <!--All Projects: The Nanny Shack Project  -->
+        <div class="col-md d-flex justify-content-center align-items-center all-project ios-project web-dev-project backend-project mb-5">
           <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
-
-            <!--Link to full Project Desription  -->
-            <div class="card-body" data-toggle="modal" data-target="#projectModal1">
+            <div class="card-body" data-toggle="modal" data-target="#NannyShack-project">
 
               <!-- Project: Image  -->
-              <img src="./imgs/bulb-s.png" class="img-fluid">
+              <img src="./imgs/projects/NannyShack/TheNannyShackWebsite.jpg" class="img-fluid">
 
               <!-- Project: Title  -->
               <h5 class="card-title">The Nanny Shack</h5>
 
               <!-- Project: Brief Descrption -->
-              <p class="card-text"> A prototype website..</p>
+              <p class="card-text"> A prototype website and mobile app built for an online nanny-booking service. The website provides a system where the schedule for nannies can be viewed and updated...</p>
             </div>
 
-            <!--Project: Tags  -->
+            <!--Project Tags  -->
             <div class="card-footer">
-              <!-- Web Developement Tag  -->
-              <button name="web-dev" type="button" class="btn btn-primary btn-sm web-dev-btn" style="font-size : 0.6rem">Web Development</button>
-              <!-- UI Design Tag  -->
-              <button name="ui-design" type="button" class="btn btn-primary btn-sm ui-design-btn" style="font-size : 0.6rem">UI Design</button>
-            </div>
+              <!-- Web Developement Tag with Popover  -->
+              <button name="web-dev" type="button" class="btn btn-primary btn-sm web-dev-btn" style="font-size : 0.6rem" >Web Development</button>
 
+              <!-- UI Design Tag with Popover -->
+              <button name="backend" type="button" class="btn btn-primary btn-sm backend-btn" style="font-size : 0.6rem">Backend</button>
+
+              <!-- UX Design Tag with Popover -->
+              <button name="ios" type="button" class="btn btn-primary btn-sm ios-btn" style="font-size : 0.6rem">iOS</button>
+            </div>
           </div>
         </div>
 
@@ -468,6 +468,143 @@
 
 
       <!-- Project: Full Descriptions -->
+
+      <!-- Nanny Shack - Popup Window  -->
+      <div class="modal fade" id="NannyShack-project" tabindex="-1" role="dialog" aria-labelledby="MB-label" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+
+              <!-- Project: Campus MApp - Scheduler Extension  -->
+              <h2 class="modal-title" id="MB-label"> The Nanny Shack</h2>
+
+              <!-- Button: closes window  -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <h4>Summary</h4>
+                  <p>
+                     A prototype website and mobile app built for an online nanny-booking service. The website provides a system where the schedule for nannies can be viewed and updated. Memberships are created for parents who can then see their financial information and their children’s schedule, and new users can check the availability of the daycare centre and then book a drop-in for their child. My team and my efforts focused first on the development of an Entity Relationship and Relational Model diagram for the system, that we then built our database management system from off of using PHP and MySQL. We also built a basic website and mobile app as well a user manual for our system.
+                  </p>
+
+                  <br>
+                  <br>
+
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex justify-content-around"">
+
+
+                    <figure class="figure" style="max-width: 90%;">
+                      <img src="./imgs/projects/NannyShack/NannyShackAbout.png" class="img-fluid">
+                      <figcaption class="figure-caption text-center"> (About Page) </figcaption>
+                    </figure>
+
+
+                    <br>
+                    <br>
+
+
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <h4>My Roles in the Project</h4>
+
+                  <ul>
+                    <li> Designed the entity relationship model and helped implement the design using MySQL </li>
+                    <li> Designed the mobile app using Xcode and Swift, including the networking logic for posting to the database</li>
+                    <li> Developed a user manual for the website and system & tested the database with sample data records</li>
+                  </ul>
+
+                  <h4>Tools/Platforms Used</h4>
+
+                  <ul>
+                    <li>phpMyAdmin</li>
+                    <li>Atom</li>
+                    <li>Xcode</li>
+                  </ul>
+
+
+                </div>
+
+
+
+                <div class="col-12 col-md-6">
+                  <h4>Screenshots from the Project</h4>
+                  <div class="d-flex justify-content-center">
+                    <figure class="figure">
+                      <img src="./imgs/projects/NannyShack/NannyShackAdmin.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption text-center"> (Initial administration page for viewing, adding, and removing clients) </figcaption>
+                    </figure>
+                  </div>
+
+                  <br>
+                  <br>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div class="d-flex justify-content-center">
+                    <figure class="figure" style="width: 20rem">
+                      <img src="./imgs/projects/NannyShack/NannyShackBooking.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption text-center"> (Website booking page for members) </figcaption>
+                    </figure>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div class="d-flex justify-content-center">
+                    <figure class="figure" style="width: 20rem">
+                      <img src="./imgs/projects/NannyShack/NannyShackMobile1.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption text-center"> (Mobile authentication screen) </figcaption>
+                    </figure>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div class="d-flex justify-content-center">
+                    <figure class="figure" style="width: 20rem">
+                      <img src="./imgs/projects/NannyShack/NannyShackMobile2.png" class="figure-img img-fluid">
+                      <figcaption class="figure-caption text-center"> (Mobile screen for adding clients to the database) </figcaption>
+                    </figure>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+
+
+
+
+                <div class="col-12">
+                  <br>
+                  <br>
+                  <h4>What I Learned</h4>
+                  <p> The focus of this project was database design, which I learned about exensively. However I was also able to improve my skills in both Xcode, team management, and communication as well. </p>
+                </div>
+
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <!-- Button opens new page showing repository -->
+              <a class="btn btn-secondary disabled"href="#" target="_blank"><img src="./imgs/Github-Icon.png" style="height: 1.5rem; width: 1.5rem"> Private Repository</a>
+
+              <!-- Button: closes window  -->
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <!-- Turtle Patrol Popup Window -->

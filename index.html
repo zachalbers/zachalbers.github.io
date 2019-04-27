@@ -171,8 +171,8 @@
          </div>
        </div>
 
-        <!--Highlighted Projects: Project 2  -->
-        <div class="col-md d-flex justify-content-center align-items-center project ios-project web-dev-project mb-5">
+        <!--Highlighted Projects: The Nanny Shack Project  -->
+        <div class="col-md d-flex justify-content-center align-items-center all-project ios-project web-dev-project backend-project mb-5">
           <div class="card shadow-sm" style="width: 18rem; height: 30rem;">
             <div class="card-body" data-toggle="modal" data-target="#NannyShack-project">
 
@@ -189,13 +189,13 @@
             <!--Project Tags  -->
             <div class="card-footer">
               <!-- Web Developement Tag with Popover  -->
-              <button type="button" class="btn btn-primary disabled btn-sm web-development-btn" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Web Development</button>
+              <button type="button" class="btn btn-primary btn-sm web-development-btn disabled" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Web Development</button>
 
               <!-- UI Design Tag with Popover -->
-              <button type="button" class="btn btn-primary btn-sm disabled" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">UI Design</button>
+              <button type="button" class="btn btn-primary btn-sm backend-btn disabled" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">Backend</button>
 
               <!-- UX Design Tag with Popover -->
-              <button type="button" class="btn btn-primary btn-sm disabled" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">UX Design</button>
+              <button type="button" class="btn btn-primary btn-sm ios-btn disabled" style="font-size : 0.6rem" data-container="body" data-toggle="popover" data-placement="top" data-content="Click the Projects tab to see related projects">iOS</button>
             </div>
           </div>
         </div>
@@ -516,10 +516,6 @@
     </div>
 
 
-
-
-    <!-- More Projects -->
-
     <!-- Nanny Shack - Popup Window  -->
     <div class="modal fade" id="NannyShack-project" tabindex="-1" role="dialog" aria-labelledby="MB-label" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
@@ -541,7 +537,7 @@
               <div class="col-12 col-lg-6">
                 <h4>Summary</h4>
                 <p>
-                   A prototype website and mobile app built for an online nanny-booking service. The website provides a system where the schedule for nannies can be viewed and updated. Memberships are created for parents who can then see their financial information and their children’s schedule, and new users can check the availability of the daycare centre and then book a drop-in for their child. This report will first look at what problems The Nanny Shack faces that can be solved using our system. Then our systems architecture and design are described thoroughly, including the Extended Entity Relationship model which we used to build our system. The implementation of our system will also be described, including the Relationship Model as well as the SQL statements used. Finally, a user manual for our system is also included as well some sample data records.
+                   A prototype website and mobile app built for an online nanny-booking service. The website provides a system where the schedule for nannies can be viewed and updated. Memberships are created for parents who can then see their financial information and their children’s schedule, and new users can check the availability of the daycare centre and then book a drop-in for their child. My team and my efforts focused first on the development of an Entity Relationship and Relational Model diagram for the system, that we then built our database management system from off of using PHP and MySQL. We also built a basic website and mobile app as well a user manual for our system.
                 </p>
 
                 <br>
@@ -568,17 +564,17 @@
                 <h4>My Roles in the Project</h4>
 
                 <ul>
-                  <li> Looked for problems  </li>
-                  <li> Designed and developed high-fidelity prototypes of the scheduler in Adobe XD </li>
-                  <li> Presented prototypes to students and other potential users in feedback sessions to get input on the designs, to improve the experience of using the schedule builder </li>
-                  <li> In Swift, developed a large portion of the scheduler's structure, including the course search/selection views and controllors as well as parsing course data</li>
+                  <li> Designed the entity relationship model and helped implement the design using MySQL </li>
+                  <li> Designed the mobile app using Xcode and Swift, including the networking logic for posting to the database</li>
+                  <li> Developed a user manual for the website and system & tested the database with sample data records</li>
                 </ul>
 
                 <h4>Tools/Platforms Used</h4>
 
                 <ul>
+                  <li>phpMyAdmin</li>
+                  <li>Atom</li>
                   <li>Xcode</li>
-                  <li>Github</li>
                 </ul>
 
 
@@ -587,41 +583,59 @@
 
 
               <div class="col-12 col-md-6">
-                <h4>Prototypes Developed in Adobe XD</h4>
+                <h4>Screenshots from the Project</h4>
                 <div class="d-flex justify-content-center">
-                  <figure class="figure" style="max-width: 50%;">
-                    <img src="./imgs/projects/CampusMApp/gif3.gif" class="figure-img img-fluid">
-                    <figcaption class="figure-caption text-center"> (Gif of Design Iteration 3) </figcaption>
-                  </figure>
-                  <br>
-                  <br>
-
-                </div>
-
-
-              </div>
-
-              <div class="col-12">
-                <div class="d-flex justify-content-around">
-                  <figure class="figure" style="max-width: 30%;">
-                    <img src="./imgs/projects/CampusMApp/gif2.gif" class="figure-img img-fluid">
-                    <figcaption class="figure-caption text-center"> (Gif of Design Iteration 2) </figcaption>
-                  </figure>
-                  <figure class="figure" style="max-width: 30%;">
-                    <img src="./imgs/projects/CampusMApp/gif1.gif" class="figure-img img-fluid">
-                    <figcaption class="figure-caption text-center"> (Gif of Design Iteration 1) </figcaption>
+                  <figure class="figure">
+                    <img src="./imgs/projects/NannyShack/NannyShackAdmin.png" class="figure-img img-fluid">
+                    <figcaption class="figure-caption text-center"> (Initial administration page for viewing, adding, and removing clients) </figcaption>
                   </figure>
                 </div>
 
                 <br>
                 <br>
               </div>
+
+              <div class="col-12 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <figure class="figure" style="width: 20rem">
+                    <img src="./imgs/projects/NannyShack/NannyShackBooking.png" class="figure-img img-fluid">
+                    <figcaption class="figure-caption text-center"> (Website booking page for members) </figcaption>
+                  </figure>
+                </div>
+                <br>
+                <br>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <figure class="figure" style="width: 20rem">
+                    <img src="./imgs/projects/NannyShack/NannyShackMobile1.png" class="figure-img img-fluid">
+                    <figcaption class="figure-caption text-center"> (Mobile authentication screen) </figcaption>
+                  </figure>
+                </div>
+                <br>
+                <br>
+              </div>
+
+              <div class="col-12 col-md-4">
+                <div class="d-flex justify-content-center">
+                  <figure class="figure" style="width: 20rem">
+                    <img src="./imgs/projects/NannyShack/NannyShackMobile2.png" class="figure-img img-fluid">
+                    <figcaption class="figure-caption text-center"> (Mobile screen for adding clients to the database) </figcaption>
+                  </figure>
+                </div>
+                <br>
+                <br>
+              </div>
+
+
+
 
               <div class="col-12">
                 <br>
                 <br>
                 <h4>What I Learned</h4>
-                <p> This project exposed my more to the agile development cycle as well as working with more specific requirements given by a client. Working with Adobe XD to create mockups of the scheduler expanded my design skills. I also improved my Swift developement skills and learned about integrating components from different developers into one app.  </p>
+                <p> The focus of this project was database design, which I learned about exensively. However I was also able to improve my skills in both Xcode, team management, and communication as well. </p>
               </div>
 
             </div>
@@ -638,6 +652,9 @@
         </div>
       </div>
     </div>
+
+
+        <!-- More Projects -->
 
 
 
