@@ -177,3 +177,7 @@ a {
     transform: rotate(90deg);
     height: auto;
 }
+
+
+/* Fix scrolling issue on mobile  */
+/* Link to fix: https://stackoverflow.com/questions/21024774/twitter-bootstrap-3-modal-on-mobile-scroll-issues  */
